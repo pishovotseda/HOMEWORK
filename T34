@@ -1,12 +1,4 @@
-
-using System;
-using System.Collections.Generic;
-
-namespace T34
-{
-    class Program
-    {
-        private int factorial(int a)
+private int factorial(int a)
         {
             if (a == 0)
             {
@@ -44,6 +36,3 @@ namespace T34
                     result += i;
                 }
             }
-        }
-    }
-}
