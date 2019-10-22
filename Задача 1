@@ -1,0 +1,4 @@
+1. Сгенерируйте список чисел любым способом
+
+import random
+print(random.sample(range(1000), 10))
