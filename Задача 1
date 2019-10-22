@@ -1,4 +1,33 @@
 1. Сгенерируйте список чисел любым способом
+2. Напишите три функции, которые вычисляют сумму этих чисел: с for-циклом, с while-циклом, с рекурсией.
+3. Напишите декоратор, выводящий время выполнения функции, оберните им ф-и из пункта 2 и вызовите их.
+
 
 import random
-print(random.sample(range(1000), 10))
+a = random.sample(range(1000), 10)
+print(a)
+
+def cycleFor(a):
+    b = 0
+    for key in a:
+        b += key
+    return b
+
+
+def cycleWhile(a):
+    b = 0
+    while len(a) > 0:
+        b += a.pop()
+    return b
+
+def summ(a):
+    if len(a) == 0:
+        return 0
+    else:
+        return a.pop() + summ(a)
+    print(a)
+
+
+print(cycleFor(a))
+print(cycleWhile(a[::]))
+print(summ(a[::]))
